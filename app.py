@@ -8,3 +8,10 @@ def home():
 
 if __name__ == '__main__':
     app.run()
+from flask import render_template, request
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        return "Giriş denendi! (Şimdilik veritabanı yok, yakında gerçek olacak)"
+    return render_template('login.html')
