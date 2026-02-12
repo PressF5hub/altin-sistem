@@ -16,3 +16,4 @@ def login():
         return "Giriş denendi! (Şimdilik veritabanı yok, yakında gerçek olacak)"
     return render_template('login.html')
 # Bu yorum deploy'u tetiklesin
+# Bu satır deploy'u tetiklesin abi
